@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortened URL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Shortened URL:</h1>
+        <p><a id="shortenedUrl" href="#" target="_blank"></a></p>
+    </div>
+    <script>
+        document.getElementById("shortenedUrl").textContent = localStorage.getItem("shortenedUrl");
+        document.getElementById("shortenedUrl").href = localStorage.getItem("shortenedUrl");
+    </script>
+</body>
+</html>
